@@ -1,0 +1,18 @@
+<div class="card">
+	<img class="logo" [src]="data?.flightSegments[0].highResAirlineLogoUrl" />
+  <div style="flex: 2">
+    <div class="row">
+    <div class="col">{{ data?.flightSegments[0].airlineName }}</div>
+    <div class="col ">{{ data?.priceInfo }}</div>
+  </div>
+  <div class="row">
+    <div class="col ">{{ data?.flightSegments[0].departureDateAndTime | date: 'short' }}</div>
+    <div class="col ">{{ data?.flightSegments[0].departureAirportCode }}</div>
+    <div class="col stopover">{{ data?.flightSegments.length-1 }} stop</div>
+    <div class="col ">{{ data?.flightSegments[data?.flightSegments.length-1].arrivalDateAndTime  | date: 'short' }}</div>
+    <div class="col">{{ formatTime(data?.durationMinutes) }}</div>
+    <button class="btn btn-outline btn-sm" style="margin-left: auto">View</button>
+  </div>
+  </div>
+	
+</div>

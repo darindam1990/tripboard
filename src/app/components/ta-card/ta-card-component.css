@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  padding: 0 1em;
+  font-size: 0.8em; 
+}
+
+.stopover {
+  border: 1px solid #565656;
+  border-radius: 12px;
+  height: 18px;
+  line-height: 16px;
+  text-align: center;
+  min-width: 64px;
+  width: 64px;
+}
